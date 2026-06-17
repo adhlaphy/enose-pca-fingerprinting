@@ -226,3 +226,13 @@ most critical sensor for gas discrimination in this array.
 1. Persaud, K. & Dodd, G. (1982). Nature, 299, 352-355.
 2. Vergara, A. et al. (2012). Sensors and Actuators B, 166-167, 320-329.
 3. Röck, F. et al. (2008). Chemical Reviews, 108(2), 705-725.
+
+## Acknowledgments
+
+This project was completed as a self-directed learning exercise under
+AI-assisted mentorship (Claude, Anthropic). The AI assistant provided
+code scaffolding, conceptual explanations, and documentation review.
+The author ran all analyses, interpreted all results, made all scientific
+observations, and directed the research questions. Domain knowledge of
+metal-oxide gas sensors and semiconductor physics is the author's own,
+developed during BS-MS studies at IISER Thiruvananthapuram.
