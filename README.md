@@ -3,7 +3,7 @@
 > PCA-based dimensionality reduction and sensor drift characterization
 > of metal-oxide sensor array data for volatile organic compound discrimination.
 
-**Author:** Adhil P — BS-MS Physics, IISER Thiruvananthapuram (2025)
+**Author:** AdhLa P — BS-MS Physics, IISER Thiruvananthapuram (2025)
 **Dataset:** UCI Gas Sensor Array Drift Dataset
 **Tools:** Python · NumPy · scikit-learn · Matplotlib · Seaborn
 
