@@ -168,33 +168,40 @@ Loading analysis → Sensor 8 identified as primary discriminating sensor
 ## Figures
 
 ### 1. Feature Distributions
+![Feature Distributions](figures/feature_distributions.png)
 Single sensor features show heavily overlapping distributions across
 all 6 gas classes, demonstrating that individual sensors cannot
 discriminate gases and motivating the array-based e-nose approach.
 
 ### 2. Correlation Heatmap
+![Correlation Heatmap](figures/correlation_heatmap.png)
 High inter-sensor correlation confirms significant redundancy in the
 128-dimensional feature space, justifying dimensionality reduction via PCA.
 
 ### 3. Scree Plot
+![Scree Plot](figures/scree_plot.png)
 PC1 explains 53.5% of total variance. Eight principal components
 capture 90% of variance — a 16x reduction from 128 dimensions.
 
 ### 4. PCA 2D Scatter
+![PCA 2D Scatter](figures/pca_2d_scatter.png)
 Ethylene and Acetone form tight, well-separated clusters.
 Ethanol and Acetaldehyde show partial overlap, consistent with
 their similar chemical structures and surface reaction mechanisms.
 
 ### 5. Drift Visualization
+![Drift Visualization](figures/drift_visualization.png)
 Batch-colored projection reveals systematic displacement of all
 gas clusters from early to late batches, confirming temporal drift
 over 36 months.
 
 ### 6. Drift Trajectories
+![Drift Trajectories](figures/drift_trajectories.png)
 Centroid trajectories show consistent directional movement in PC
 space. Acetone shows the largest total drift. Toluene shows the least.
 
 ### 7. Loading Plot
+![Loading Plot](figures/loading_plot.png)
 Sensor 8 contributes most strongly to PC1, identifying it as the
 most critical sensor for gas discrimination in this array.
 
