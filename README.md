@@ -111,7 +111,36 @@ Open 01_PCA_Drift_Analysis.ipynb in Jupyter or Google Colab.
 Run all cells from top to bottom.
 
 ---
+## Mathematical Background
 
+PCA is performed on the normalized data matrix **X** of shape (N x p)
+where N = 13,910 samples and p = 128 features.
+
+**Step 1 — Center the data:**
+Each feature column is shifted to have zero mean.
+X_centered = X - mean(X, axis=0)
+
+**Step 2 — Covariance matrix:**
+C = (1 / N-1) * X_centered.T @ X_centered
+Shape: (128 x 128). Entry C[i,j] measures how features i and j vary together.
+
+**Step 3 — Eigendecomposition:**
+C @ v = lambda * v
+Eigenvectors v are the principal component directions.
+Eigenvalues lambda measure variance along each direction.
+
+**Step 4 — Sort and project:**
+Eigenvectors are sorted by descending eigenvalue.
+Z = X_centered @ V_k  where V_k contains the top k eigenvectors.
+
+**Explained variance ratio:**
+EVR_k = lambda_k / sum(lambda)
+
+**Validation:**
+Manual implementation using numpy.linalg.eigh was compared against
+sklearn.decomposition.PCA. All 10 principal component projections
+matched to 8 decimal places, and explained variance ratios agreed
+to 4 decimal places across all components.
 ## Methodology
 
 ```
