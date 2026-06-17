@@ -121,7 +121,7 @@ Each feature column is shifted to have zero mean.
 X_centered = X - mean(X, axis=0)
 
 **Step 2 — Covariance matrix:**
-C = (1 / N-1) * X_centered.T @ X_centered
+C = (1 / (N-1)) * X_centered.T @ X_centered
 Shape: (128 x 128). Entry C[i,j] measures how features i and j vary together.
 
 **Step 3 — Eigendecomposition:**
@@ -218,4 +218,4 @@ most critical sensor for gas discrimination in this array.
 
 1. Persaud, K. & Dodd, G. (1982). Nature, 299, 352-355.
 2. Vergara, A. et al. (2012). Sensors and Actuators B, 166-167, 320-329.
-3. Rock, F. et al. (2008). Chemical Reviews, 108(2), 705-725.
+3. Röck, F. et al. (2008). Chemical Reviews, 108(2), 705-725.
