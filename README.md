@@ -229,10 +229,11 @@ most critical sensor for gas discrimination in this array.
 
 ## Acknowledgments
 
-This project was completed as a self-directed learning exercise under
-AI-assisted mentorship (Claude, Anthropic). The AI assistant provided
-code scaffolding, conceptual explanations, and documentation review.
-The author ran all analyses, interpreted all results, made all scientific
-observations, and directed the research questions. Domain knowledge of
-metal-oxide gas sensors and semiconductor physics is the author's own,
-developed during BS-MS studies at IISER Thiruvananthapuram.
+Data: UCI Gas Sensor Array Drift Dataset (Vergara et al., 2012).
+
+### Use of AI tools
+I used Claude (Anthropic) to help structure parts of the Python code,
+explain unfamiliar methods, and review the documentation for clarity.
+I chose the research questions, ran every analysis, and interpreted the
+results. The sensor physics behind the interpretation comes from my
+BS-MS research on metal-oxide gas sensors at IISER Thiruvananthapuram.
